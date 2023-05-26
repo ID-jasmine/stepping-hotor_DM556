@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"pwm_bujingdianji\startup_stm32f103xe.o"
+"pwm_bujingdianji\main.o"
+"pwm_bujingdianji\gpio.o"
+"pwm_bujingdianji\rtc.o"
+"pwm_bujingdianji\tim.o"
+"pwm_bujingdianji\stm32f1xx_it.o"
+"pwm_bujingdianji\stm32f1xx_hal_msp.o"
+"pwm_bujingdianji\stm32f1xx_hal_gpio_ex.o"
+"pwm_bujingdianji\stm32f1xx_hal_rtc.o"
+"pwm_bujingdianji\stm32f1xx_hal_rtc_ex.o"
+"pwm_bujingdianji\stm32f1xx_hal.o"
+"pwm_bujingdianji\stm32f1xx_hal_rcc.o"
+"pwm_bujingdianji\stm32f1xx_hal_rcc_ex.o"
+"pwm_bujingdianji\stm32f1xx_hal_gpio.o"
+"pwm_bujingdianji\stm32f1xx_hal_dma.o"
+"pwm_bujingdianji\stm32f1xx_hal_cortex.o"
+"pwm_bujingdianji\stm32f1xx_hal_pwr.o"
+"pwm_bujingdianji\stm32f1xx_hal_flash.o"
+"pwm_bujingdianji\stm32f1xx_hal_flash_ex.o"
+"pwm_bujingdianji\stm32f1xx_hal_exti.o"
+"pwm_bujingdianji\stm32f1xx_hal_tim.o"
+"pwm_bujingdianji\stm32f1xx_hal_tim_ex.o"
+"pwm_bujingdianji\system_stm32f1xx.o"
+--strict --scatter "PWM_bujingdianji\PWM_bujingdianji.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWM_bujingdianji.map" -o PWM_bujingdianji\PWM_bujingdianji.axf
